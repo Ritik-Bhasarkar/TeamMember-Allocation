@@ -21,7 +21,7 @@ const Employees = ({
       </div>
 
       <div className="row justify-content-center mt-3 mb-3">
-        <div className="col-7">
+        <div className=" card-employees col-7">
           <div className="card-collection">
             {employees.map((employee) => (
               <div
