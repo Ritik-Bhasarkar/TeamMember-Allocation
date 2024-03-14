@@ -13,19 +13,18 @@ const Employees = ({
       <div className="row justify-content-center mt-3 mb-3">
         <div className="col-7">
           <Teams
-          selectedTeam={selectedTeam}
-          handleTeamSelectionChange={handleTeamSelectionChange}
-          
+            selectedTeam={selectedTeam}
+            handleTeamSelectionChange={handleTeamSelectionChange}
           />
         </div>
       </div>
 
       <div className="row justify-content-center mt-3 mb-3">
-        <div className=" card-employees col-7">
+        <div className=" card-employees col-4">
           <div className="card-collection">
             {employees.map((employee) => (
               <div
-              key={employee.id}
+                key={employee.id}
                 id={employee.id}
                 className={
                   employee.teamName === selectedTeam
